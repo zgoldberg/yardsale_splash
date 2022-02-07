@@ -1,11 +1,12 @@
+// https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/
+
 import battenwear_logo from './images/brands/battenwear.png'
-import entireworld_logo from './images/brands/entireworld-logo.svg'
 import girlfriend_logo from './images/brands/girlfriend-collective.png'
 import johnston_logo from './images/brands/johnston-of-elgin.png'
 import organic_logo from './images/brands/organic-basics.png'
 import pangia_logo from './images/brands/pangia.png'
 import richer_poorer_logo from './images/brands/richer-poorer.png'
-import satta_poorer_logo from './images/brands/satta.png'
+import satta_logo from './images/brands/satta.png'
 import stellamccartney_logo from './images/brands/stellamccartney.svg'
 import story_logo from './images/brands/story.png'
 import veja_logo from './images/brands/veja.png'
@@ -19,7 +20,31 @@ function App() {
 
   const [activeSlideIndex, setActiveSlideIndex ] = useState(0);
 
-  const brand_logos = [battenwear_logo, entireworld_logo, girlfriend_logo, johnston_logo, organic_logo, pangia_logo, richer_poorer_logo, satta_poorer_logo, stellamccartney_logo, story_logo, veja_logo];
+  const brand_logos = [
+    battenwear_logo,
+    girlfriend_logo,
+    johnston_logo,
+    organic_logo,
+    pangia_logo,
+    richer_poorer_logo,
+    satta_logo,
+    stellamccartney_logo,
+    story_logo,
+    veja_logo
+  ];
+
+  const brand_links = [
+    "https://battenwear.com/",
+    "https://girlfriend.com/",
+    "https://www.johnstonsofelgin.com/",
+    "https://organicbasics.com/",
+    "https://thepangaia.com/",
+    "https://richer-poorer.com/",
+    "https://www.sattalivity.com/",
+    "https://www.stellamccartney.com/",
+    "https://www.storymfg.com/",
+    "https://www.veja-store.com/en_us/"
+  ]
 
   return (
     <>
@@ -109,9 +134,11 @@ function App() {
           disableNavIfEdgeVisible={false}
         >
 
-        {brand_logos.map((image) => (
+        {brand_logos.map((image, i) => (
             <div className="carousel-div">
-              <img className="carousel-img" src={image}/>
+              <a target="_blank" href={brand_links[i]}>
+                <img className="carousel-img" src={image}/>
+              </a>
             </div>
         ))}
 
