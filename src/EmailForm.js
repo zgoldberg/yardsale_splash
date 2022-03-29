@@ -22,16 +22,19 @@ function EmailForm(props) {
     console.log(emailData);
   }
 
+  const class_prefix = props.mobile ? "mobile-" : "";
+
   return (
     <>
-      <input type="text" placeholder="YOUR EMAIL" className="email-input"
+      <input type="text" placeholder="YOUR EMAIL" className={class_prefix + "email-input"}
               value={emailData}
               onChange={(e) => setEmailData(e.target.value)} />
-      <button className="email-input" onClick={handleRequestInvite}>
+      <button className={class_prefix +"email-input"}
+              onClick={handleRequestInvite}>
         REQUEST INVITE
       </button>
     </>
   );
 }
 
-export default EmailForm; 
+export default EmailForm;
