@@ -1,5 +1,10 @@
 // https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/
 
+import yardsale_logo from './images/yardsale_logo.png'
+
+import top_image from './images/top_image.png'
+import bottom_image from './images/bottom_image.png'
+
 import battenwear_logo from './images/brands/battenwear.png'
 import girlfriend_logo from './images/brands/girlfriend-collective.png'
 import johnston_logo from './images/brands/johnston-of-elgin.png'
@@ -53,17 +58,19 @@ function App() {
       <div className="center-top-section">
         <div className="top-section">
           <div className="top-left-quad">
-            <div className='yardsale-icon-placeholder'>
-            <h1 className='yardsale-icon-placeholder'>Yard Sale</h1>
+
+            <div className="yardsale-icon">
+              <img className='yardsale-icon' src={yardsale_logo}/>
             </div>
 
             <div className='form-div'>
+
             <h1 className='form-div'>
-            Sustainable fashion, handpicked, and curated for you.
+              Sustainable fashion, handpicked, and curated for you.
             </h1>
 
             <p className='form-div'>
-            The future of fashion is concious, ethical, and here. Yard Sale provides a boutique, curated selection of designer goods, carefully sourced for you and our planet.
+              The future of fashion is concious, ethical, and here. Yard Sale provides a boutique, curated selection of designer goods, carefully sourced for you and our planet.
             </p>
 
             <EmailForm/>
@@ -71,7 +78,7 @@ function App() {
           </div>
 
           <div className="top-right-quad">
-            <div className='image-rop-right-placeholder'></div>
+            <img className='image-rop-right' src={top_image}/>
           </div>
         </div>
 
@@ -151,7 +158,7 @@ function App() {
 
       <div className="center-top-section">
         <div className="bottom-section">
-          <div className='image-bottom-left-placeholder'></div>
+          <img className='image-bottom-left' src={bottom_image}/>
 
           <div className="bottom-text">
           <div className='how-works-message'>

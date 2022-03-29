@@ -51,7 +51,7 @@ img.globe-icon {
   top: 59px;
 }
 
-div.yardsale-icon-placeholder {
+/* div.yardsale-icon-placeholder {
   width: 369px;
   height: 116px;
   margin-left: 177px;
@@ -66,6 +66,17 @@ h1.yardsale-icon-placeholder {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+} */
+
+
+div.yardsale-icon {
+  width: 100%;
+  text-align: center;
+}
+
+img.yardsale-icon {
+  height: auto;
+  width: 400px;
 }
 
 div.form-div {
@@ -94,7 +105,18 @@ p.form-div {
 
 
 
-div.image-rop-right-placeholder {
+/* div.image-rop-right-placeholder {
+  width: 530px;
+  height: 530px;
+  left: 840px;
+  top: 127px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 53px;
+} */
+
+img.image-rop-right {
   width: 530px;
   height: 530px;
   left: 840px;
@@ -132,7 +154,16 @@ div.horizontal-line-middle {
   margin: 40px 20px 20px 20px;
 }
 
-div.image-bottom-left-placeholder {
+/* div.image-bottom-left-placeholder {
+  width: 879px;
+  height: 450px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 53px;
+} */
+
+img.image-bottom-left {
   width: 879px;
   height: 450px;
 
