@@ -4,25 +4,34 @@ import $ from 'jquery';
 function EmailForm(props) {
 
   const [emailData, setEmailData] = useState("");
+  const [messageCode, setMessageCode] = useState(0);
 
   const handleRequestInvite = () => {
-    $.ajax({
-      // url: `http://localhost:5000/email?email=${emailData}`,
-      url: `https://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
-      method: 'POST',
-      crossDomain: true,
-      dataType: 'json',
-      data: JSON.stringify({
+    if (emailData) {      
+      $.ajax({
+        // url: `http://localhost:5000/email?email=${emailData}`,
+        url: `https://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
+        method: 'POST',
+        crossDomain: true,
+        dataType: 'json',
+        data: JSON.stringify({
           email: emailData
-      }),
-      success: (res) => {
-          console.log(res);
-      }
-    });
-    console.log(emailData);
+        }),
+        success: (res) => {
+          setMessageCode(1);
+          setEmailData("");
+        }
+      });
+    }
   }
 
   const class_prefix = props.mobile ? "mobile-" : "";
+
+  const email_message = (messageCode == 1) ? (
+    <p className={class_prefix + "email-message"}>email recorded</p>
+  ) : (
+    <></>
+  );
 
   return (
     <>
@@ -33,6 +42,7 @@ function EmailForm(props) {
               onClick={handleRequestInvite}>
         REQUEST INVITE
       </button>
+      {email_message}
     </>
   );
 }

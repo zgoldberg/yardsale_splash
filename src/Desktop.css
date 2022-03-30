@@ -305,6 +305,16 @@ img.carousel-img {
   margin-right: 100px;
 }
 
+p.email-message {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: justify;
+  color: green;
+}
+
 
 
 
