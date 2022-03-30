@@ -7,7 +7,7 @@ function EmailForm(props) {
   const [messageCode, setMessageCode] = useState(0);
 
   const handleRequestInvite = () => {
-    if (emailData) {      
+    if (emailData) {
       $.ajax({
         // url: `http://localhost:5000/email?email=${emailData}`,
         url: `https://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
@@ -26,9 +26,9 @@ function EmailForm(props) {
   }
 
   const class_prefix = props.mobile ? "mobile-" : "";
-
+  const email_message_text = "Success :)"
   const email_message = (messageCode == 1) ? (
-    <p className={class_prefix + "email-message"}>email recorded</p>
+    <p className={class_prefix + "email-message"}>{email_message_text}</p>
   ) : (
     <></>
   );
