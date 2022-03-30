@@ -8,7 +8,7 @@ function EmailForm(props) {
   const handleRequestInvite = () => {
     $.ajax({
       // url: `http://localhost:5000/email?email=${emailData}`,
-      url: `http://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
+      url: `https://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
       method: 'POST',
       crossDomain: true,
       dataType: 'json',
