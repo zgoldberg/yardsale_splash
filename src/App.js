@@ -11,8 +11,6 @@ function App() {
     query: '(min-width: 1500px)'
   })
 
-  console.log(isDesktopOrLaptop);
-
   return (
     <>
         {isDesktopOrLaptop ? <Desktop/> : <Mobile/>}
