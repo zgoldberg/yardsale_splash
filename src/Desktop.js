@@ -35,12 +35,10 @@ function Desktop() {
   ];
 
   const brand_links = [
-    "https://battenwear.com/",
     "https://girlfriend.com/",
     "https://www.johnstonsofelgin.com/",
     "https://organicbasics.com/",
     "https://thepangaia.com/",
-    "https://richer-poorer.com/",
     "https://www.sattalivity.com/",
     "https://www.stellamccartney.com/",
     "https://www.storymfg.com/",
