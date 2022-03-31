@@ -26,7 +26,7 @@ function EmailForm(props) {
   }
 
   const class_prefix = props.mobile ? "mobile-" : "";
-  const email_message_text = "Success :D"
+  const email_message_text = "Success :)"
   const email_message = (messageCode == 1) ? (
     <p className={class_prefix + "email-message"}>{email_message_text}</p>
   ) : (
