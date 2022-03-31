@@ -5,12 +5,10 @@ import yardsale_logo from './images/yardsale_logo.png'
 import top_image from './images/top_image.png'
 import bottom_image from './images/bottom_image.png'
 
-// import battenwear_logo from './images/brands/battenwear.png'
 import girlfriend_logo from './images/brands/girlfriend-collective.png'
 import johnston_logo from './images/brands/johnston-of-elgin.png'
 import organic_logo from './images/brands/organic-basics.png'
 import pangia_logo from './images/brands/pangia.png'
-// import richer_poorer_logo from './images/brands/richer-poorer.png'
 import satta_logo from './images/brands/satta.png'
 import stellamccartney_logo from './images/brands/stellamccartney.svg'
 import story_logo from './images/brands/story.png'
@@ -25,12 +23,10 @@ function Mobile() {
   const [activeSlideIndex, setActiveSlideIndex ] = useState(0);
 
   const brand_logos = [
-    battenwear_logo,
     girlfriend_logo,
     johnston_logo,
     organic_logo,
     pangia_logo,
-    richer_poorer_logo,
     satta_logo,
     stellamccartney_logo,
     story_logo,
