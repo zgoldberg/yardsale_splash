@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import $ from 'jquery';
 
+
 function EmailForm(props) {
 
   const [emailData, setEmailData] = useState("");
