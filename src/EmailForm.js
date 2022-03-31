@@ -10,7 +10,7 @@ function EmailForm(props) {
     if (emailData) {
       $.ajax({
         // url: `http://localhost:5000/email?email=${emailData}`,
-        url: `https://zgoldberg.pythonanywhere.com/email?email=${emailData}`,
+        url: `https://zgtodaysyardsale.pythonanywhere.com/email?email=${emailData}`,
         method: 'POST',
         crossDomain: true,
         dataType: 'json',
