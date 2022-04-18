@@ -116,11 +116,10 @@ p.form-div {
   border-radius: 53px;
 } */
 
-img.image-rop-right {
-  width: 530px;
-  height: 530px;
-  left: 840px;
-  top: 127px;
+img.image-top-right {
+  /* width: 530px;
+  height: 530px; */
+
 
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -164,8 +163,8 @@ div.horizontal-line-middle {
 } */
 
 img.image-bottom-left {
-  width: 879px;
-  height: 450px;
+  /* width: 879px;
+  height: 450px; */
 
   border: 1px solid #000000;
   box-sizing: border-box;

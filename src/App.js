@@ -7,8 +7,10 @@ import { useMediaQuery } from 'react-responsive';
 
 function App() {
 
+  const mobile_threshold = 1400;
+
   const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1500px)'
+    query: '(min-width:' + mobile_threshold + 'px)'
   })
 
   return (

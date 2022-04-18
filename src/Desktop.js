@@ -21,7 +21,23 @@ import Carousel from "react-simply-carousel";
 
 function Desktop() {
 
-  const [activeSlideIndex, setActiveSlideIndex ] = useState(0);
+  function getResizeFactor() {
+    if (window.innerWidth > 1600) {
+      return 1;
+    } else if (window.innerWidth > 1400) {
+      return 0.75;
+    } else {
+      return 0.6;
+    }
+  }
+
+  const image_top_right_width = 530;
+  const image_top_right_height = 530;
+  const image_bottom_left_width = 879;
+  const image_bottom_left_height = 450;
+
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [imageResizeFactor, setImageResizeFactor] = useState(getResizeFactor());
 
   const brand_logos = [
     girlfriend_logo,
@@ -44,6 +60,9 @@ function Desktop() {
     "https://www.storymfg.com/",
     "https://www.veja-store.com/en_us/"
   ]
+
+  window.addEventListener('resize', () => {setImageResizeFactor(getResizeFactor())});
+  // handleResize();
 
   return (
     <>
@@ -72,7 +91,13 @@ function Desktop() {
           </div>
 
           <div className="top-right-quad">
-            <img className='image-rop-right' src={top_image}/>
+            <img className='image-top-right'
+                 src={top_image}
+                 style={{
+                   width: imageResizeFactor * image_top_right_width + 'px',
+                   height: 1 *  image_top_right_height + 'px',
+                 }}
+            />
           </div>
         </div>
 
@@ -152,7 +177,13 @@ function Desktop() {
 
       <div className="center-top-section">
         <div className="bottom-section">
-          <img className='image-bottom-left' src={bottom_image}/>
+          <img className='image-bottom-left'
+               src={bottom_image}
+               style={{
+                 width: imageResizeFactor * image_bottom_left_width + 'px',
+                 height: 1 *  image_bottom_left_height + 'px',
+               }}
+          />
 
           <div className="bottom-text">
           <div className='how-works-message'>
