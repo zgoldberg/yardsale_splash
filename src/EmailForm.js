@@ -40,7 +40,7 @@ function EmailForm(props) {
   const email_message_text = "Success :)"
   const invalid_email_message_text = "Invalid email :("
   const email_message = (messageCode == 1) ? (
-    <p className={class_prefix + "email-message"}>{email_message_text}</p>
+    <p className={class_prefix + "email-message"} style={{color: "#9EADFF"}}>{email_message_text}</p>
   ) : (
     (messageCode == 2) ? (
       <p className={class_prefix + "email-message"} style={{color: "red"}}>{invalid_email_message_text}</p>
