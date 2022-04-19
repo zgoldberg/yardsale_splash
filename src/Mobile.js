@@ -14,6 +14,10 @@ import stellamccartney_logo from './images/brands/stellamccartney.svg'
 import story_logo from './images/brands/story.png'
 import veja_logo from './images/brands/veja.png'
 
+import instagram_logo from './images/instagram_logo.svg'
+
+import text from './text.js'
+
 import { useState } from 'react';
 
 import EmailForm from './EmailForm';
@@ -52,24 +56,79 @@ function Mobile() {
       </div>
 
       <div className='mobile-form-div'>
-        <h1 className='mobile-form-div'>
-          Sustainable fashion, handpicked, and curated for you.
+        <h1 className='form-div'>
+          {text['top_left_text_1']}
         </h1>
 
-        <p className='mobile-form-div'>
-          The future of fashion is concious, ethical, and here. Yard Sale provides a boutique, curated selection of designer goods, carefully sourced for you and our planet.
+        <p className='form-div'>
+          {text['top_left_text_2']}
+        </p>
+
+        <p className='form-div'>
+          {text['top_left_text_3']}
         </p>
 
         <EmailForm mobile={true}/>
       </div>
 
+
       <div className='mobile-image-rop-right'>
         <img className='mobile-image-rop-right' src={top_image}/>
       </div>
 
+      <div className='horizontal-line-top'></div>
+
+      <div className="our-mission-1">
+        <div className="our-mission">
+          <h1 className="our-mission">
+            {text['mission_text_1']}
+          </h1>
+
+          <p className="our-mission">
+            {text['mission_text_2']}
+          </p>
+        </div>
+      </div>
+
+      <div className='horizontal-line-top'></div>
+
+
+
+
+
+      <div className='mobile-image-bottom-left'>
+        <img className='mobile-image-bottom-left' src={bottom_image}/>
+      </div>
+
+      <div className="mobile-bottom-text">
+        <div className='mobile-how-works-message'>
+          <p className='mobile-how-works-message'>
+            {text['how_works_text_1']}
+          </p>
+        </div>
+
+        <div className='mobile-how-works-text'>
+          <p className='mobile-how-works-text'>
+            {text['how_works_text_2']}
+          </p>
+
+          <p className='mobile-how-works-text'>
+            {text['how_works_text_3']}
+          </p>
+
+          <p className='mobile-how-works-text'>
+            {text['how_works_text_4']}
+          </p>
+        </div>
+      </div>
+
+      <div className='horizontal-line-bottom'></div>
+
+
+
       <div className='mobile-a-few-brands-message'>
         <p className='mobile-a-few-brands-message'>
-          A few brands we think you’d love to meet...
+          {text['a_few_brands_text']}
         </p>
 
         {brand_logos.map((image, i) => (
@@ -81,31 +140,23 @@ function Mobile() {
         ))}
       </div>
 
-      <div className='mobile-image-bottom-left'>
-        <img className='mobile-image-bottom-left' src={bottom_image}/>
+      <div className='horizontal-line-top'></div>
+
+
+      <div className='social-media'>
+        <p className='social-media'>
+          {text['bottom_text_1']}
+        </p>
+
+        <a className='social-media' href={text['instagram_link']} target="_blank">
+          <img className='social-media'
+               src={instagram_logo}
+           />
+         </a>
       </div>
 
-      <div className="mobile-bottom-text">
-        <div className='mobile-how-works-message'>
-          <p className='mobile-how-works-message'>
-            How Yard Sale works
-          </p>
-        </div>
+      <div className='horizontal-line-bottom'></div>
 
-        <div className='mobile-how-works-text'>
-          <p className='mobile-how-works-text'>
-          Our mission is not to change how people shop for clothing, but rather give them the ability to do so sustainably.
-          </p>
-
-          <p className='mobile-how-works-text'>
-          We are partnering with a wide range of sustainable, boutique fashion brands to accomplish this goal. Each one is carefully selected based on their actions towards reducing the environmental footprint of the fashion industry, as well as the quality of their clothing.
-          </p>
-
-          <p className='mobile-how-works-text'>
-          This way, when you shop with us, you won’t have to worry about anything except finding those one-of-a-kind pieces.
-          </p>
-        </div>
-      </div>
 
     </>
   );

@@ -14,6 +14,10 @@ import stellamccartney_logo from './images/brands/stellamccartney.svg'
 import story_logo from './images/brands/story.png'
 import veja_logo from './images/brands/veja.png'
 
+import instagram_logo from './images/instagram_logo.svg'
+
+import text from './text.js'
+
 import { useState } from 'react';
 
 import EmailForm from './EmailForm';
@@ -62,7 +66,6 @@ function Desktop() {
   ]
 
   window.addEventListener('resize', () => {setImageResizeFactor(getResizeFactor())});
-  // handleResize();
 
   return (
     <>
@@ -79,11 +82,15 @@ function Desktop() {
             <div className='form-div'>
 
             <h1 className='form-div'>
-              Sustainable fashion, handpicked, and curated for you.
+              {text['top_left_text_1']}
             </h1>
 
             <p className='form-div'>
-              The future of fashion is concious, ethical, and here. Yard Sale provides a boutique, curated selection of designer goods, carefully sourced for you and our planet.
+              {text['top_left_text_2']}
+            </p>
+
+            <p className='form-div'>
+              {text['top_left_text_3']}
             </p>
 
             <EmailForm/>
@@ -106,10 +113,61 @@ function Desktop() {
 
       <div className='horizontal-line-top'></div>
 
+        <div className="our-mission-1">
+          <div className="our-mission">
+            <h1 className="our-mission">
+              {text['mission_text_1']}
+            </h1>
+
+            <p className="our-mission">
+              {text['mission_text_2']}
+            </p>
+          </div>
+        </div>
+
+      <div className='horizontal-line-top'></div>
+
+
+      <div className="center-top-section">
+        <div className="bottom-section">
+          <img className='image-bottom-left'
+               src={bottom_image}
+               style={{
+                 width: imageResizeFactor * image_bottom_left_width + 'px',
+                 height: 1 *  image_bottom_left_height + 'px',
+               }}
+          />
+
+          <div className="bottom-text">
+            <div className='how-works-message'>
+              <p className='how-works-message'>
+                {text['how_works_text_1']}
+              </p>
+            </div>
+
+            <div className='how-works-text'>
+              <p className='how-works-text'>
+                {text['how_works_text_2']}
+              </p>
+
+              <p className='how-works-text'>
+                {text['how_works_text_3']}
+              </p>
+
+              <p className='how-works-text'>
+                {text['how_works_text_4']}
+              </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div className='horizontal-line-bottom'></div>
+
 
       <div className='a-few-brands-message'>
         <p className='a-few-brands-message'>
-          A few brands we think you’d love to meet...
+          {text['a_few_brands_text']}
         </p>
 
         <Carousel
@@ -175,62 +233,19 @@ function Desktop() {
 
       <div className='horizontal-line-middle'></div>
 
-      <div className="center-top-section">
-        <div className="bottom-section">
-          <img className='image-bottom-left'
-               src={bottom_image}
-               style={{
-                 width: imageResizeFactor * image_bottom_left_width + 'px',
-                 height: 1 *  image_bottom_left_height + 'px',
-               }}
-          />
+      <div className='social-media'>
+        <p className='social-media'>
+          {text['bottom_text_1']}
+        </p>
 
-          <div className="bottom-text">
-          <div className='how-works-message'>
-            <p className='how-works-message'>
-              How Yard Sale works
-            </p>
-          </div>
-
-          <div className='how-works-text'>
-            <p className='how-works-text'>
-            Our mission is not to change how people shop for clothing, but rather give them the ability to do so sustainably.
-            </p>
-
-            <p className='how-works-text'>
-            We are partnering with a wide range of sustainable, boutique fashion brands to accomplish this goal. Each one is carefully selected based on their actions towards reducing the environmental footprint of the fashion industry, as well as the quality of their clothing.
-            </p>
-
-            <p className='how-works-text'>
-            This way, when you shop with us, you won’t have to worry about anything except finding those one-of-a-kind pieces.
-            </p>
-            </div>
-          </div>
-        </div>
+        <a className='social-media' href={text['instagram_link']} target="_blank">
+          <img className='social-media'
+               src={instagram_logo}
+           />
+         </a>
       </div>
-
 
       <div className='horizontal-line-bottom'></div>
-
-      {/*
-      <div className='box-bottom-wrapper'>
-      <div className='box-bottom'>
-
-        <div className='terms-of-service'>
-          <p className='bottom-bar-text'><a href='#'>TERMS OF SERVICE</a></p>
-        </div>
-
-
-        <div className='privacy-policy'>
-          <p className='bottom-bar-text'><a href='#'>PRIVACY POLICY</a></p>
-        </div>
-
-      </div>
-
-      <div className='box-bottom-padding'></div>
-      </div>
-      */}
-
     </>
   );
 }
