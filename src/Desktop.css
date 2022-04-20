@@ -127,6 +127,8 @@ img.image-top-right {
 }
 
 div.horizontal-line-top {
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 0px;
   border-top: 0.5px solid #000000;
   margin: 40px 20px 20px 20px;
@@ -276,8 +278,9 @@ input.email-input {
   background-color: transparent;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 32px;
+  font-size: 24px;
   width: 400px;
+  margin-bottom: 300px;
 }
 
 input.email-input:focus {
@@ -294,7 +297,7 @@ button.email-input {
   padding: 5px;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 button.email-input:hover {

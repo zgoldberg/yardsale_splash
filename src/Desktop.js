@@ -100,7 +100,7 @@ function Desktop() {
 
       </div>
 
-      <div className='horizontal-line-top'></div>
+      <div className='horizontal-line-bottom'></div>
 
         <div className="our-mission-1">
           <div className="our-mission">
