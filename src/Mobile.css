@@ -27,7 +27,7 @@ h1.mobile-form-div {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 34px;
 }
 
@@ -35,7 +35,7 @@ p.mobile-form-div {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 34px;
 }
 
@@ -64,7 +64,7 @@ p.mobile-a-few-brands-message {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 34px;
 
   color: #000000;
@@ -117,7 +117,7 @@ p.mobile-how-works-message {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 34px;
   text-align: justify;
 }
@@ -130,7 +130,7 @@ div.mobile-how-works-text {
 p.mobile-how-works-text {
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 
@@ -140,7 +140,7 @@ input.mobile-email-input {
   background-color: transparent;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 25px;
+  font-size: 24px;
   width: 100%;
 }
 
@@ -159,7 +159,7 @@ button.mobile-email-input {
   padding: 5px;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 25px;
+  font-size: 24px;
   color: black;
 }
 
@@ -171,15 +171,36 @@ p.mobile-email-message {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 34px;
   text-align: justify;
 }
 
-div.our-mission {
-  width: 90%;
-  text-align: center;
-  padding: 60px 100px 60px 100px;
+h1.mobile-our-mission {
+  color: black;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+p.mobile-our-mission {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: justify;
+}
+
+p.mobile-social-media {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: justify;
 }
 
 

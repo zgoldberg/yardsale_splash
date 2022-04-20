@@ -162,7 +162,7 @@ function Desktop() {
           </div>
       </div>
 
-      <div className='horizontal-line-bottom'></div>
+      <div className='horizontal-line-top'></div>
 
 
       <div className='a-few-brands-message'>
@@ -231,7 +231,7 @@ function Desktop() {
 
       </div>
 
-      <div className='horizontal-line-middle'></div>
+      <div className='horizontal-line-top'></div>
 
       <div className='social-media'>
         <p className='social-media'>
@@ -245,7 +245,6 @@ function Desktop() {
          </a>
       </div>
 
-      <div className='horizontal-line-bottom'></div>
     </>
   );
 }

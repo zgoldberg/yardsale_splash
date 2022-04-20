@@ -56,15 +56,15 @@ function Mobile() {
       </div>
 
       <div className='mobile-form-div'>
-        <h1 className='form-div'>
+        <h1 className='mobile-form-div'>
           {text['top_left_text_1']}
         </h1>
 
-        <p className='form-div'>
+        <p className='mobile-form-div'>
           {text['top_left_text_2']}
         </p>
 
-        <p className='form-div'>
+        <p className='mobile-form-div'>
           {text['top_left_text_3']}
         </p>
 
@@ -78,22 +78,17 @@ function Mobile() {
 
       <div className='horizontal-line-top'></div>
 
-      <div className="mobile-our-mission-1">
-        <div className="our-mission">
-          <h1 className="our-mission">
+        <div className="mobile-form-div">
+          <h1 className="mobile-our-mission">
             {text['mission_text_1']}
           </h1>
 
-          <p className="our-mission">
+          <p className="mobile-our-mission">
             {text['mission_text_2']}
           </p>
         </div>
-      </div>
 
       <div className='horizontal-line-top'></div>
-
-
-
 
 
       <div className='mobile-image-bottom-left'>
@@ -122,7 +117,7 @@ function Mobile() {
         </div>
       </div>
 
-      <div className='horizontal-line-bottom'></div>
+      <div className='horizontal-line-top'></div>
 
 
 
@@ -144,7 +139,7 @@ function Mobile() {
 
 
       <div className='social-media'>
-        <p className='social-media'>
+        <p className='mobile-social-media'>
           {text['bottom_text_1']}
         </p>
 
@@ -154,9 +149,6 @@ function Mobile() {
            />
          </a>
       </div>
-
-      <div className='horizontal-line-bottom'></div>
-
 
     </>
   );

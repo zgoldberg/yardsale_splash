@@ -91,7 +91,7 @@ h1.form-div {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
 }
 
@@ -99,7 +99,7 @@ p.form-div {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
 }
 
@@ -141,7 +141,7 @@ div.our-mission-1 {
 div.our-mission {
   width: 80%;
   text-align: center;
-  padding: 60px 100px 60px 100px;
+  margin: 60px 100px 60px 100px;
 }
 
 h1.our-mission {
@@ -149,7 +149,7 @@ h1.our-mission {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
 }
 
@@ -157,7 +157,7 @@ p.our-mission {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
   text-align: justify;
 }
@@ -171,7 +171,7 @@ p.a-few-brands-message {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
 
   color: #000000;
@@ -260,13 +260,6 @@ div.terms-of-service {
   top: -8px;
 }
 
-p.bottom-bar-text {
-  font-family: Noto Sans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -283,7 +276,7 @@ input.email-input {
   background-color: transparent;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 25px;
+  font-size: 32px;
   width: 400px;
 }
 
@@ -301,7 +294,7 @@ button.email-input {
   padding: 5px;
   font-family: Noto Sans;
   font-style: normal;
-  font-size: 25px;
+  font-size: 32px;
 }
 
 button.email-input:hover {
@@ -326,20 +319,21 @@ p.email-message {
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
   text-align: justify;
 }
 
 div.social-media {
-  padding-left: 40px;
+  padding: 40px;
+  padding-bottom: 80px;
 }
 
 p.social-media {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 34px;
   text-align: justify;
 }
