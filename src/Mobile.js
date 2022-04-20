@@ -78,7 +78,7 @@ function Mobile() {
 
       <div className='horizontal-line-top'></div>
 
-      <div className="our-mission-1">
+      <div className="mobile-our-mission-1">
         <div className="our-mission">
           <h1 className="our-mission">
             {text['mission_text_1']}
