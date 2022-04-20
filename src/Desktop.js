@@ -43,27 +43,16 @@ function Desktop() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [imageResizeFactor, setImageResizeFactor] = useState(getResizeFactor());
 
-  const brand_logos = [
-    girlfriend_logo,
-    johnston_logo,
-    organic_logo,
-    pangia_logo,
-    satta_logo,
-    stellamccartney_logo,
-    story_logo,
-    veja_logo
+  const brands = [
+    [girlfriend_logo, "https://girlfriend.com/"],
+    [johnston_logo, "https://www.johnstonsofelgin.com/"],
+    [organic_logo, "https://organicbasics.com/"],
+    [pangia_logo, "https://thepangaia.com/"],
+    [satta_logo, "https://www.sattalivity.com/"],
+    [stellamccartney_logo, "https://www.stellamccartney.com/"],
+    [story_logo, "https://www.storymfg.com/"],
+    [veja_logo, "https://www.veja-store.com/en_us/"],
   ];
-
-  const brand_links = [
-    "https://girlfriend.com/",
-    "https://www.johnstonsofelgin.com/",
-    "https://organicbasics.com/",
-    "https://thepangaia.com/",
-    "https://www.sattalivity.com/",
-    "https://www.stellamccartney.com/",
-    "https://www.storymfg.com/",
-    "https://www.veja-store.com/en_us/"
-  ]
 
   window.addEventListener('resize', () => {setImageResizeFactor(getResizeFactor())});
 
@@ -218,10 +207,10 @@ function Desktop() {
           disableNavIfEdgeVisible={false}
         >
 
-        {brand_logos.map((image, i) => (
+        {brands.map((tuple) => (
             <div className="carousel-div">
-              <a target="_blank" href={brand_links[i]}>
-                <img className="carousel-img" src={image}/>
+              <a target="_blank" href={tuple[1]}>
+                <img className="carousel-img" src={tuple[0]}/>
               </a>
             </div>
         ))}
