@@ -2,6 +2,7 @@
 
 body {
   background-image: url("./images/mesh-gradient.png");
+  font-family: 'Noto Sans';
 }
 
 div.center-top-section {
@@ -53,24 +54,6 @@ img.globe-icon {
   top: 59px;
 }
 
-/* div.yardsale-icon-placeholder {
-  width: 369px;
-  height: 116px;
-  margin-left: 177px;
-
-  background-color: black;
-  text-align: center;
-  border-radius: 50px;
-}
-
-h1.yardsale-icon-placeholder {
-  color: white;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
-
 div.yardsale-icon {
   width: 100%;
   text-align: center;
@@ -105,24 +88,7 @@ p.form-div {
   line-height: 34px;
 }
 
-
-
-/* div.image-rop-right-placeholder {
-  width: 530px;
-  height: 530px;
-  left: 840px;
-  top: 127px;
-
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 53px;
-} */
-
 img.image-top-right {
-  /* width: 530px;
-  height: 530px; */
-
-
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 53px;
@@ -187,19 +153,7 @@ div.horizontal-line-middle {
   margin: 40px 20px 20px 20px;
 }
 
-/* div.image-bottom-left-placeholder {
-  width: 879px;
-  height: 450px;
-
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 53px;
-} */
-
 img.image-bottom-left {
-  /* width: 879px;
-  height: 450px; */
-
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 53px;

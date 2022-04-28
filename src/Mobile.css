@@ -79,6 +79,7 @@ div.mobile-carousel-div {
 
 img.mobile-carousel-img {
   width: 40%;
+  max-width: 400px;
   height: auto;
 }
 
