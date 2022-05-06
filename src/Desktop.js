@@ -68,7 +68,7 @@ function Desktop() {
 
   return (
     <>
-      <div className='top-line'></div>
+      <div className='top-line' style={{borderStyle: 'none'}}></div>
 
       <div className="center-top-section">
         <div className="top-section">
