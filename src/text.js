@@ -17,7 +17,7 @@ const text = {
 
   'how_works_text_3': 'Each of our brands is carefully selected based on the quality of their clothing, as well as their environmental footprint.',
 
-  'how_works_text_4': 'We cutrate, so all you have to do is shop.',
+  'how_works_text_4': 'We curate, so all you have to do is shop.',
 
   'bottom_text_1': 'Aware fashion, from luxury designers, curated for you.',
 
