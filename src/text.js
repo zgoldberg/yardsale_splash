@@ -7,13 +7,13 @@ const text = {
 
   'mission_text_1': 'OUR MISSION',
 
-  'mission_text_2': 'YARD SALE serves fashion lovers. We do the digging, so that you don’t have to. Our mission is to be the global destination for ethical luxury fashion, connecting people with concious brands they’ll love.',
+  'mission_text_2': 'YARD SALE serves fashion lovers. We do the digging, so that you don’t have to. Our mission is to be the global destination for ethical luxury fashion, connecting people with conscious brands they’ll love.',
 
   'a_few_brands_text': 'A few brands we think you’d love to meet...',
 
   'how_works_text_1': 'HOW YARD SALE WORKS',
 
-  'how_works_text_2': 'The future of fashion is concious, ethical and here.',
+  'how_works_text_2': 'The future of fashion is conscious, ethical and here.',
 
   'how_works_text_3': 'Each of our brands is carefully selected based on the quality of their clothing, as well as their environmental footprint.',
 
