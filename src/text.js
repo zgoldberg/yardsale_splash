@@ -1,7 +1,7 @@
 const text = {
   'top_left_text_1': 'Aware fashion, without changing how you shop.',
 
-  'top_left_text_2': 'YARD SALE makes buying sustainable fashion easy, without shifting your habits. Browse, discover and order from boutique,  hanpicked luxury goods, carefully sourced for you and our plantet.',
+  'top_left_text_2': 'YARD SALE makes buying sustainable fashion easy, without shifting your habits. Browse, discover and order from boutique,  handpicked luxury goods, carefully sourced for you and our planet.',
 
   'top_left_text_3': 'Let us connect you with brands you’ll love, without the guilt.',
 
